@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sudoku</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="name">
+            <h3>Sudoku</h3></div>
+        <div class="game">
+            <div class="board">
+                <div class="but">
+                    <div class="diff-button">
+                        <p>Level Of Difficulty</p>
+                        <span id="easy" class="butt">Easy</span>
+                        <span id="med" class="butt">Medium</span>
+                        <span id="hard" class="butt">Hard</span>
+                    </div>
+                    <div class="new-button">
+                        <span id="new" class="butt">New Board</span>
+                    </div>
+                </div>
+                <div class="sudoku-box">
+                    <table>
+                        <tr class="table-row">
+                            <td id="rc11" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc12" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc13" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc14" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc15" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc16" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc17" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc18" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc19" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc21" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc22" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc23" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc24" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc25" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc26" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc27" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc28" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc29" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc31" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc32" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc33" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc34" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc35" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc36" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc37" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc38" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc39" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc41" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc42" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc43" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc44" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc45" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc46" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc47" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc48" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc49" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc51" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc52" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc53" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc54" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc55" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc56" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc57" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc58" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc59" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc61" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc62" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc63" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc64" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc65" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc66" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc67" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc68" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc69" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc71" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc72" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc73" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc74" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc75" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc76" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc77" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc78" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc79" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc81" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc82" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc83" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc84" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc85" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc86" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc87" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc88" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc89" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                        <tr>
+                            <td id="rc91" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc92" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc93" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc94" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc95" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc96" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc97" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc98" class="cell"><input type="number" max-length="1" value=""></td>
+                            <td id="rc99" class="cell"><input type="number" max-length="1" value=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="rules-leader">
+                <div class="rl-button">
+                    <span id="rl-r" class="butt">Rules</span>
+                    <span id="rl-l" class="butt">Leaderboard</span>
+                </div>
+                <div class="rules">
+                  <p>Straight forward rules of the game:</p>
+                  <ol>
+                    <li>The board is comprised of a 9×9 matrix, divided into 9 sub sections</li>
+                    <li>Each square can have a number from 1 to 9</li>
+                    <li>Numbers must be unique per row</li>
+                    <li>Numbers must be unique per column</li>
+                    <li>Numbers must be unique per section</li>
+                  </ol>
+                </div>
+                <div class="leader">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
